@@ -8,13 +8,28 @@ venv/
 .coverage
 htmlcov/
 
-# Ambiente e banco local
+# Ambiente e banco de dados
 .env
+.env.*
+!.env.example
 *.db
 *.db-shm
 *.db-wal
+*.db-journal
 *.sqlite3
+
+# Frontend
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+frontend/.env.local
+frontend/.env.*.local
 
 # Sistema operacional e IDE
 .DS_Store
 .vscode/
+
+desktop.ini
+Thumbs.db
+

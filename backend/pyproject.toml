@@ -1,3 +1,4 @@
+
 [project]
 name = "rocketlab-backend"
 version = "2026.2"
@@ -6,7 +7,7 @@ requires-python = ">=3.11"
 dependencies = [
     "fastapi>=0.115.0",
     "uvicorn[standard]>=0.32.0",
-    "sqlalchemy>=2.0.35",
+    "sqlalchemy[asyncio]>=2.0.35",
     "aiosqlite>=0.20.0",
     "pydantic>=2.9.0",
     "pydantic-settings>=2.5.0",
@@ -42,3 +43,4 @@ select = ["E", "F", "I", "UP", "B", "SIM"]
 
 [tool.ruff.lint.flake8-bugbear]
 extend-immutable-calls = ["fastapi.Depends", "fastapi.Query"]
+
